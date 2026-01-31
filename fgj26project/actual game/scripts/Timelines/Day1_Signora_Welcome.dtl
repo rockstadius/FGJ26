@@ -12,3 +12,9 @@ Signora: Eat, drink, make merry! These nights three are yours for the taking.
 Signora: Should your delights be shy… remember that no daylight falls upon our floor, and thy mask [b]will[/b] veil your vice.
 You: The Signora winks and the crowd laughs, but your stomach churns. No one at elven court shies away from their pleasure, no matter how cruel or unusual it may be.
 Signora: And, perchance, our very [b]Queen[/b] shall grace these humble walls with her most glorious presence.
+if {Globals.dottore} == true:
+	Signora: You pressed dottore
+elif {Globals.colombina} == true:
+	Signora: You pressed colombina
+else:
+	Signora: Who knows what mask you bear
