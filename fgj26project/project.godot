@@ -22,12 +22,12 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Harlequin": "res://actual game/Assets/Characters/Harlequin.dch",
+"Harlequin": "res://actual game/scripts/CharacterScripts/Harlequin.dch",
 "Hostes": "res://actual game/scripts/CharacterScripts/Hostes.dch",
-"Pierrot": "res://actual game/Assets/Characters/Pierrot.dch",
+"Pierrot": "res://actual game/scripts/CharacterScripts/Pierrot.dch",
 "Signora": "res://Signora.dch",
-"Styles/Signora": "res://actual game/scripts/Styles/Signora.dch",
-"You": "res://actual game/You.dch"
+"Styles/Signora": "res://actual game/scripts/CharacterScripts/Signora.dch",
+"You": "res://actual game/scripts/CharacterScripts/You.dch"
 }
 directories/dtl_directory={
 "Day1_Signora_Welcome": "res://actual game/scripts/Timelines/Day1_Signora_Welcome.dtl",
