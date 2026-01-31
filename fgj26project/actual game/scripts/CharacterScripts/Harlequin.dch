@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 &"_translation_id": "",
-&"color": Color(1, 1, 1, 1),
+&"color": Color(0.96875, 1, 0, 1),
 &"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
@@ -10,12 +10,22 @@
 "style": "Character",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "Harlequin",
 &"description": "",
 &"display_name": "Harlequin",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"Harlequin": {
+"export_overrides": {
+"image": "\"res://actual game/Assets/Characters/Harlequin.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 &"scale": 1.0
 }

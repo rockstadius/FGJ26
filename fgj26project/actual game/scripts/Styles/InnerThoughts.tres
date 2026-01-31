@@ -29,4 +29,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("1_32auj")]([])
-metadata/_latest_layer = "10"
+metadata/_latest_layer = ""

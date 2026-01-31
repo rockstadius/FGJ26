@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 &"_translation_id": "",
-&"color": Color(0.714844, 0.684253, 0.615715, 1),
+&"color": Color(0.680339, 0.96875, 0.630066, 1),
 &"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
@@ -10,16 +10,16 @@
 "style": "Character",
 "suffix": ""
 },
-&"default_portrait": "You_portrait",
+&"default_portrait": "Tartaglio_Portrait",
 &"description": "",
-&"display_name": "You",
+&"display_name": "Tartaglio",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"You_portrait": {
+"Tartaglio_Portrait": {
 "export_overrides": {
-"image": "\"res://actual game/Assets/Characters/You.png\""
+"image": "\"res://actual game/Assets/Characters/Tartaglio.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

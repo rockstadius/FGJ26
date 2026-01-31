@@ -1,3 +1,5 @@
+join Harlequin left 
+join You center
 Harlequin: Your nerve is commendable, little lamb.
 Harlequin: You know what lies at stake. Were I able to go in your stead, surely I would.
 Harlequin: Not every secret is mine to reveal, but I would be a poor contributor to our cause indeed if I sent you into the den of wolves [i]completely[/i] unprepared.
@@ -30,6 +32,7 @@ Harlequin: Don't let them sniff you out lest they swallow you whole.
 Harlequin: Quite simple, [pause=0.5]is it not?
 - Child’s play, really
 - What could go wrong?
-- Am I in danger?
-You: The corners of the Harlequin’s mouth lift into a smirk.
+- Am I in danger? 
+You: [i]The corners of the Harlequin’s mouth lift into a smirk.[/i]
 Harlequin: Now choose your mask for the night with care.
+join Harlequin left
