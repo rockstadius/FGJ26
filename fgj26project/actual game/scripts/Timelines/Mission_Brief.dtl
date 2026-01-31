@@ -1,0 +1,35 @@
+Harlequin: Your nerve is commendable, little lamb.
+Harlequin: You know what lies at stake. Were I able to go in your stead, surely I would.
+Harlequin: Not every secret is mine to reveal, but I would be a poor contributor to our cause indeed if I sent you into the den of wolves [i]completely[/i] unprepared.
+Harlequin: You must find [b]Roseus[/b], our mysterious benefactor. We have them narrowed down to three. 
+Harlequin: [b]Pierrot[/b], the youngest daughter of house Moss, [b]Pantalone[/b] the Merchant of Lost Souls, or [b]Tartaglia[/b], the Queen’s personal physician.
+label harlequin_choices
+Harlequin: Now, ask what’s on your mind. 
+- What do you need me to do?
+	Harlequin: When you arrive at the revelries, identify our three candidates.
+	Harlequin: Talk to them. Find out which one is Roseus.
+	Harlequin: Bring them into our fold.
+	jump harlequin_choices
+- How will I know the target?
+	Harlequin: They will be reluctant to out themself, that much is for sure.
+	Harlequin: We know they are a person of some considerable means, but that they do not support the rebellion in the open for fear of retaliation or their status.
+	Harlequin: They write in a refined voice, but that may be an act.
+	Harlequin: What else… Roseus means rose, and as such I would expect some thorns.
+	Harlequin: Does that help you? No?
+	Harlequin: It’s not too late to back out, [i]Agnellino[/i]. 
+	jump harlequin_choices
+- Who are you, really?
+	Harlequin: Ahh, let’s focus on unmasking one mysterious gentleperson at a time.
+	jump harlequin_choices
+- I have no questions.
+Harlequin: There we have it. Find Roseus. Gain his ear, his trust, and his loyalty to our cause.
+Harlequin: Or hers, I suppose. Roseus has been… slippery, so far.
+Harlequin: But remember, the Queen’s men, the Wolves of Twilight, are in attendance. 
+Harlequin: Do. [pause=0.5]Not.[pause=0.5] Get.[pause=0.5] Caught.
+Harlequin: Don't let them sniff you out lest they swallow you whole.
+Harlequin: Quite simple, [pause=0.5]is it not?
+- Child’s play, really
+- What could go wrong?
+- Am I in danger?
+You: The corners of the Harlequin’s mouth lift into a smirk.
+Harlequin: Now choose your mask for the night with care.
