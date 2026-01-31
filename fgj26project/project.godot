@@ -32,7 +32,7 @@ layout/style_directory={
 "": "res://actual game/scripts/Character.tres",
 "Character": "res://actual game/scripts/Character.tres"
 }
-layout/style_list=["res://actual game/scripts/Character.tres", ""]
+layout/style_list=["res://actual game/scripts/Character.tres"]
 layout/default_style="res://actual game/scripts/Character.tres"
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
@@ -68,6 +68,12 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
