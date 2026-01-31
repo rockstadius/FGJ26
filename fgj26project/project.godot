@@ -32,7 +32,6 @@ directories/dch_directory={
 directories/dtl_directory={
 "Day1_Signora_Welcome": "res://actual game/scripts/Timelines/Day1_Signora_Welcome.dtl",
 "Mission_Brief": "res://actual game/scripts/Timelines/Mission_Brief.dtl",
-"Starting speach": "res://actual game/scripts/Timelines/Starting speach.dtl",
 "timeline_test": "res://addons/dialogic/Resources/timeline_test.dtl"
 }
 layout/style_directory={
@@ -75,6 +74,7 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+variables={}
 
 [display]
 
