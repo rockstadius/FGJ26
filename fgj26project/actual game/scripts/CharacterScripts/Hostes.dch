@@ -7,7 +7,7 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "",
+"style": "Character",
 "suffix": ""
 },
 &"default_portrait": "Untitled Artwork",
@@ -19,7 +19,7 @@
 &"portraits": {
 "Untitled Artwork": {
 "export_overrides": {
-"image": "\"res://actual game/Assets/charecters/Untitled_Artwork.png\""
+"image": "\"res://actual game/Assets/Characters/Untitled_Artwork.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

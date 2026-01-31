@@ -22,17 +22,20 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Hostes": "res://actual game/scripts/Hostes.dch"
+"Harlequin": "res://actual game/Assets/Characters/Harlequin.dch",
+"Hostes": "res://actual game/scripts/CharacterScripts/Hostes.dch",
+"Pierrot": "res://actual game/Assets/Characters/Pierrot.dch",
+"Signora": "res://Signora.dch"
 }
 directories/dtl_directory={
-"Starting speach": "res://actual game/scripts/Starting speach.dtl",
+"Starting speach": "res://actual game/scripts/Timelines/Starting speach.dtl",
 "timeline_test": "res://addons/dialogic/Resources/timeline_test.dtl"
 }
 layout/style_directory={
-"": "res://actual game/scripts/Character.tres",
-"Character": "res://actual game/scripts/Character.tres"
+"Character": "res://actual game/scripts/Styles/Character.tres",
+"Inner thought": "res://actual game/scripts/Styles/Inner thought.tres"
 }
-layout/style_list=["res://actual game/scripts/Character.tres"]
+layout/style_list=["res://actual game/scripts/Styles/Character.tres", "res://actual game/scripts/Styles/Inner thought.tres"]
 layout/default_style="res://actual game/scripts/Character.tres"
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
