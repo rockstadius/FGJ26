@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=6 format=3 uid="uid://ccnw1toexy8op"]
+
+[ext_resource type="Script" uid="uid://bwg6yncmh2cml" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_32auj"]
+[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn" id="2_4fk4m"]
+[ext_resource type="Script" uid="uid://dv08k6ljua6fm" path="res://addons/dialogic/Resources/dialogic_style.gd" id="2_v6lps"]
+
+[sub_resource type="Resource" id="Resource_4fk4m"]
+script = ExtResource("1_32auj")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_2svnv"]
+script = ExtResource("1_32auj")
+scene = ExtResource("2_4fk4m")
+overrides = {
+"name_label_alignment": "1",
+"name_label_box_modulate": "Color(0.694118, 0, 0, 0)",
+"next_indicator_animation": "1"
+}
+
+[resource]
+script = ExtResource("2_v6lps")
+name = "InnerThoughts"
+layer_list = Array[String](["10"])
+layer_info = {
+"": SubResource("Resource_4fk4m"),
+"10": SubResource("Resource_2svnv")
+}
+base_overrides = {}
+layers = Array[ExtResource("1_32auj")]([])
+metadata/_latest_layer = "10"

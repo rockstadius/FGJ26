@@ -14,7 +14,11 @@
 [sub_resource type="Resource" id="Resource_ettxq"]
 script = ExtResource("2_w0w72")
 scene = ExtResource("1_0opaq")
-overrides = {}
+overrides = {
+"global_bg_color": "Color(0.107422, 0.0476265, 0.0476265, 0.9)",
+"global_font_color": "Color(0.984375, 0.966215, 0.62677, 1)",
+"global_font_size": "24.0"
+}
 
 [sub_resource type="Resource" id="Resource_kmvek"]
 script = ExtResource("2_w0w72")
@@ -29,7 +33,13 @@ overrides = {}
 [sub_resource type="Resource" id="Resource_bq4td"]
 script = ExtResource("2_w0w72")
 scene = ExtResource("5_l1fsf")
-overrides = {}
+overrides = {
+"box_distance": "50.0",
+"box_size": "Vector2(900, 400)",
+"name_label_hide_when_no_character": "true",
+"portrait_position": "1",
+"text_custom_size": "18.0"
+}
 
 [sub_resource type="Resource" id="Resource_6bg8f"]
 script = ExtResource("2_w0w72")

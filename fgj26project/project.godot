@@ -25,17 +25,21 @@ directories/dch_directory={
 "Harlequin": "res://actual game/Assets/Characters/Harlequin.dch",
 "Hostes": "res://actual game/scripts/CharacterScripts/Hostes.dch",
 "Pierrot": "res://actual game/Assets/Characters/Pierrot.dch",
-"Signora": "res://Signora.dch"
+"Signora": "res://Signora.dch",
+"Styles/Signora": "res://actual game/scripts/Styles/Signora.dch",
+"You": "res://actual game/You.dch"
 }
 directories/dtl_directory={
+"Day1_Signora_Welcome": "res://actual game/scripts/Timelines/Day1_Signora_Welcome.dtl",
+"Mission_Brief": "res://actual game/scripts/Timelines/Mission_Brief.dtl",
 "Starting speach": "res://actual game/scripts/Timelines/Starting speach.dtl",
 "timeline_test": "res://addons/dialogic/Resources/timeline_test.dtl"
 }
 layout/style_directory={
 "Character": "res://actual game/scripts/Styles/Character.tres",
-"Inner thought": "res://actual game/scripts/Styles/Inner thought.tres"
+"InnerThoughts": "res://actual game/scripts/Styles/InnerThoughts.tres"
 }
-layout/style_list=["res://actual game/scripts/Styles/Character.tres", "res://actual game/scripts/Styles/Inner thought.tres"]
+layout/style_list=["res://actual game/scripts/Styles/Character.tres", "res://actual game/scripts/Styles/InnerThoughts.tres"]
 layout/default_style="res://actual game/scripts/Character.tres"
 glossary/default_case_sensitive=true
 extensions_folder="res://addons/dialogic_additions"
