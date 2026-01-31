@@ -1,8 +1,14 @@
 [background scene="res://actual game/Ballroom.tscn" fade="0.0"]
 You: Eerie, nigh frenetic mirth fills your ears as you make your way down the stairs into the ballroom.
-You: The lanterns for which the revelries have their names float upon nigh invisible strings of spider silk, reminding you all too well how easy it would be to succumb to the glamor and thrall of these Lords and Ladies.
-You: Beyond gilded visors and handwoven frills, inhumanly sharp teeth and eyes hide. A man in a wolf mask glances your way with hunger in his smirk, and Harlequin's warning rings in your mind. [i]Don't let them sniff you out lest they swallow you whole.[/i]
+You: The lanterns for which the revelries have their names float upon almost invisible strings of spider silk, reminding you all too well how easy it would be to succumb to the glamor and thrall of these Lords and Ladies.
+You: Beyond gilded visors and handwoven frills, inhumanly sharp teeth and eyes stalk.
+You: A man in a wolf mask glances your way with hunger in his smirk, and Harlequin's warning rings in your mind. [b]"Don't let them sniff you out lest they swallow you whole.""[/b]
 You: The orchestra quiets. With slow sure steps and arms outreached in welcome, Signora, the hostess of the night, walks onto the floor.
 join Signora right [animation="Fade In"]
 Signora: Gorgeous creatures of Radelma!
+You: [i]The Signora’s voice carries supernaturally bright.[/i]
 Signora: The time you have awaited is almost upon us.
+Signora: Eat, drink, make merry! These nights three are yours for the taking.
+Signora: Should your delights be shy… remember that no daylight falls upon our floor, and thy mask [b]will[/b] veil your vice.
+You: The Signora winks and the crowd laughs, but your stomach churns. No one at elven court shies away from their pleasure, no matter how cruel or unusual it may be.
+Signora: And, perchance, our very [b]Queen[/b] shall grace these humble walls with her most glorious presence.
