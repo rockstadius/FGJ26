@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvyt2vnce03mc"]
+
+[ext_resource type="Texture2D" uid="uid://dkx4u8dbu3i30" path="res://actual game/Assets/bg.png" id="1_eks82"]
+[ext_resource type="Script" uid="uid://blsjcvm6gvd78" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="2_b38d0"]
+
+[node name="Talk" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(570, 319)
+scale = Vector2(0.325928, 0.325928)
+texture = ExtResource("1_eks82")
+
+[node name="DialogicBackground" type="Node" parent="."]
+script = ExtResource("2_b38d0")
+metadata/_custom_type_script = "uid://blsjcvm6gvd78"
