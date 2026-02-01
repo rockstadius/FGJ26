@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 &"_translation_id": "",
-&"color": Color(0.680339, 0.96875, 0.630066, 1),
+&"color": Color(0.346039, 0.31958, 0.53125, 1),
 &"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
@@ -12,9 +12,9 @@
 },
 &"default_portrait": "Tartaglio_Portrait",
 &"description": "",
-&"display_name": "Tartaglio",
+&"display_name": "Tartaglia",
 &"mirror": false,
-&"nicknames": [""],
+&"nicknames": ["Tartaglio"],
 &"offset": Vector2(0, 0),
 &"portraits": {
 "Tartaglio_Portrait": {

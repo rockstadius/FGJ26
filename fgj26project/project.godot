@@ -32,7 +32,11 @@ directories/dch_directory={
 "You": "res://actual game/scripts/CharacterScripts/You.dch"
 }
 directories/dtl_directory={
+"Day1_Debrief": "res://actual game/Assets/Day1_Debrief.dtl",
+"Day1_Pantalone": "res://actual game/Assets/Day1_Pantalone.dtl",
+"Day1_Pierrot": "res://actual game/Assets/Day1_Pierrot.dtl",
 "Day1_Signora_Welcome": "res://actual game/scripts/Timelines/Day1_Signora_Welcome.dtl",
+"Day1_Tartaglia": "res://actual game/Assets/Day1_Tartaglia.dtl",
 "Mission_Brief": "res://actual game/scripts/Timelines/Mission_Brief.dtl",
 "timeline_test": "res://addons/dialogic/Resources/timeline_test.dtl"
 }

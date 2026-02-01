@@ -6,19 +6,19 @@
 [ext_resource type="Texture2D" uid="uid://vp1c17lfnr3x" path="res://actual game/Assets/Characters/Pantalone.png" id="4_8v2cx"]
 [ext_resource type="Texture2D" uid="uid://njtdtrvgoj2d" path="res://actual game/Assets/Characters/Pierrot.png" id="4_b6i6o"]
 [ext_resource type="FontFile" uid="uid://cvqoidi4qslw" path="res://actual game/Assets/Fonts/PirataOne-Regular.ttf" id="4_c7cqp"]
-[ext_resource type="Texture2D" uid="uid://b00vabqjhgh2m" path="res://actual game/Assets/Masks/Mask_Colombina.png" id="5_n1on7"]
-[ext_resource type="Texture2D" uid="uid://c58gnjfr7shcg" path="res://actual game/Assets/Masks/Mask_Colombina_hover.png" id="6_6v302"]
 [ext_resource type="Texture2D" uid="uid://cgl0agcbsi4nc" path="res://actual game/Assets/Characters/Tartaglio.png" id="6_8spqq"]
 [ext_resource type="FontFile" uid="uid://bmgwjoq4e66nb" path="res://actual game/Assets/Fonts/Alegreya/Alegreya-VariableFont_wght.ttf" id="6_cl0dy"]
 [ext_resource type="FontFile" uid="uid://dududt788b8ta" path="res://actual game/Assets/Fonts/Alegreya/static/Alegreya-Italic.ttf" id="7_6v302"]
 [ext_resource type="Texture2D" uid="uid://dykakpno66mrb" path="res://actual game/Assets/Harlequin_bg.png" id="7_8spqq"]
 [ext_resource type="FontFile" uid="uid://bdxdfc8m80qvm" path="res://actual game/Assets/Fonts/Alegreya/static/Alegreya-Bold.ttf" id="8_xqjiv"]
 [ext_resource type="Texture2D" uid="uid://bts14giljq63a" path="res://actual game/Assets/Masks/Mask_Gnaga.png" id="9_nxnfu"]
-[ext_resource type="Texture2D" uid="uid://k5rcqvrsqv3t" path="res://actual game/Assets/Masks/Mask_Moon.png" id="10_r8dgj"]
+[ext_resource type="Texture2D" uid="uid://b1v213dugiqdi" path="res://actual game/Assets/Masks/Mask_Columbina.PNG" id="10_8spqq"]
+[ext_resource type="Texture2D" uid="uid://db6o2k4crlpc7" path="res://actual game/Assets/Masks/Mask_Columbina_Hover.PNG" id="10_v0laj"]
 [ext_resource type="Texture2D" uid="uid://r2ipakko2yxu" path="res://actual game/Assets/Masks/Mask_Dottore.png" id="11_dgom3"]
 [ext_resource type="Texture2D" uid="uid://cdl24jf4x8o1a" path="res://actual game/Assets/Masks/Mask_Gnaga_hover.png" id="11_nxnfu"]
-[ext_resource type="Texture2D" uid="uid://cu52tkldd807i" path="res://actual game/Assets/Masks/Mask_Moon_hover.png" id="13_r8dgj"]
 [ext_resource type="Texture2D" uid="uid://bgbou42rad7wg" path="res://actual game/Assets/Masks/Mask_Dottore_hover.png" id="15_dgom3"]
+[ext_resource type="Texture2D" uid="uid://netj2lg3ia2y" path="res://actual game/Assets/Masks/Mask_SunMoon.PNG" id="16_qigcf"]
+[ext_resource type="Texture2D" uid="uid://b13rfe02rsjh0" path="res://actual game/Assets/Masks/Mask_SunMoon_Hover.PNG" id="17_qbvob"]
 
 [sub_resource type="Theme" id="Theme_eg7oi"]
 default_font = ExtResource("4_c7cqp")
@@ -39,29 +39,29 @@ texture = ExtResource("2_eg7oi")
 [node name="Signora" type="TextureButton" parent="."]
 unique_name_in_owner = true
 offset_left = 1579.0
-offset_top = 9.0
+offset_top = 36.0
 offset_right = 3432.0
-offset_bottom = 3037.0
+offset_bottom = 3064.0
 scale = Vector2(0.18, 0.18)
 texture_normal = ExtResource("3_8v2cx")
 texture_hover = ExtResource("3_8v2cx")
 
 [node name="Pierrot" type="TextureButton" parent="."]
 unique_name_in_owner = true
-offset_left = 1285.0
-offset_top = 366.0
-offset_right = 3138.0
-offset_bottom = 3394.0
-scale = Vector2(0.18, 0.18)
+offset_left = 150.0
+offset_top = 483.0
+offset_right = 2003.0
+offset_bottom = 3511.0
+scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("4_b6i6o")
 texture_hover = ExtResource("4_b6i6o")
 
 [node name="Pantalone" type="TextureButton" parent="."]
 unique_name_in_owner = true
-offset_left = 885.0
-offset_top = 435.0
-offset_right = 2738.0
-offset_bottom = 3463.0
+offset_left = 897.0
+offset_top = 403.0
+offset_right = 2750.0
+offset_bottom = 3431.0
 scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("4_8v2cx")
 texture_pressed = ExtResource("4_8v2cx")
@@ -69,10 +69,10 @@ stretch_mode = 4
 
 [node name="Tartaglia" type="TextureButton" parent="."]
 unique_name_in_owner = true
-offset_left = 156.0
-offset_top = 421.0
-offset_right = 2009.0
-offset_bottom = 3449.0
+offset_left = 1236.0
+offset_top = 244.0
+offset_right = 3089.0
+offset_bottom = 3272.0
 scale = Vector2(0.22, 0.22)
 texture_normal = ExtResource("6_8spqq")
 texture_pressed = ExtResource("6_8spqq")
@@ -80,6 +80,7 @@ stretch_mode = 4
 
 [node name="HarlequinTalk" type="Node2D" parent="."]
 unique_name_in_owner = true
+visible = false
 
 [node name="HarlequinBackground" type="Sprite2D" parent="HarlequinTalk"]
 position = Vector2(980, 540)
@@ -87,6 +88,7 @@ texture = ExtResource("7_8spqq")
 
 [node name="MaskSelection" type="Node2D" parent="."]
 unique_name_in_owner = true
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="MaskSelection"]
 offset_right = 1920.0
@@ -113,23 +115,23 @@ vertical_alignment = 1
 [node name="ColombinaButton" type="TextureButton" parent="MaskSelection"]
 unique_name_in_owner = true
 offset_left = 40.0
-offset_top = 172.0
-offset_right = 1150.0
-offset_bottom = 1628.0
-scale = Vector2(0.4, 0.4)
-texture_normal = ExtResource("5_n1on7")
-texture_pressed = ExtResource("5_n1on7")
-texture_hover = ExtResource("6_6v302")
+offset_top = 194.0
+offset_right = 1568.0
+offset_bottom = 2198.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("10_8spqq")
+texture_pressed = ExtResource("10_8spqq")
+texture_hover = ExtResource("10_v0laj")
 
 [node name="Colombina_text" type="RichTextLabel" parent="MaskSelection/ColombinaButton"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -367.5
-offset_top = 1060.0
-offset_right = -67.5
-offset_bottom = 1160.0
+offset_left = -397.333
+offset_top = 1360.0
+offset_right = -97.3334
+offset_bottom = 1460.0
 grow_horizontal = 2
 scale = Vector2(2.7, 2.7)
 size_flags_horizontal = 3
@@ -144,11 +146,11 @@ vertical_alignment = 1
 [node name="RichTextLabel" type="RichTextLabel" parent="MaskSelection/ColombinaButton"]
 custom_minimum_size = Vector2(500, 300)
 layout_mode = 0
-offset_left = 105.0
-offset_top = 1415.0
-offset_right = 605.0
-offset_bottom = 1715.0
-scale = Vector2(2, 2)
+offset_left = 140.0
+offset_top = 1676.67
+offset_right = 640.0
+offset_bottom = 1976.67
+scale = Vector2(2.5, 2.5)
 theme = SubResource("Theme_8v2cx")
 theme_override_fonts/italics_font = ExtResource("7_6v302")
 theme_override_fonts/bold_font = ExtResource("8_xqjiv")
@@ -161,10 +163,10 @@ horizontal_alignment = 1
 [node name="GnagaButton" type="TextureButton" parent="MaskSelection"]
 unique_name_in_owner = true
 offset_left = 966.0
-offset_top = 172.0
-offset_right = 2076.0
-offset_bottom = 1628.0
-scale = Vector2(0.4, 0.4)
+offset_top = 139.0
+offset_right = 2494.0
+offset_bottom = 2143.0
+scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("9_nxnfu")
 texture_pressed = ExtResource("9_nxnfu")
 texture_hover = ExtResource("11_nxnfu")
@@ -174,10 +176,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -367.5
-offset_top = 1060.0
-offset_right = -67.5
-offset_bottom = 1160.0
+offset_left = -367.333
+offset_top = 1543.33
+offset_right = -67.3331
+offset_bottom = 1643.33
 grow_horizontal = 2
 scale = Vector2(2.7, 2.7)
 size_flags_horizontal = 3
@@ -192,11 +194,11 @@ vertical_alignment = 1
 [node name="RichTextLabel" type="RichTextLabel" parent="MaskSelection/GnagaButton"]
 custom_minimum_size = Vector2(500, 300)
 layout_mode = 0
-offset_left = 105.0
-offset_top = 1414.5
-offset_right = 605.0
-offset_bottom = 1748.5
-scale = Vector2(2, 2)
+offset_left = 173.334
+offset_top = 1860.0
+offset_right = 673.333
+offset_bottom = 2194.0
+scale = Vector2(2.5, 2.5)
 theme = SubResource("Theme_8v2cx")
 theme_override_fonts/italics_font = ExtResource("7_6v302")
 theme_override_fonts/bold_font = ExtResource("8_xqjiv")
@@ -209,23 +211,23 @@ horizontal_alignment = 1
 [node name="SunandMoonButton" type="TextureButton" parent="MaskSelection"]
 unique_name_in_owner = true
 offset_left = 1423.0
-offset_top = 160.0
-offset_right = 2533.0
-offset_bottom = 1616.0
-scale = Vector2(0.4, 0.4)
-texture_normal = ExtResource("10_r8dgj")
-texture_pressed = ExtResource("10_r8dgj")
-texture_hover = ExtResource("13_r8dgj")
+offset_top = 127.0
+offset_right = 2951.0
+offset_bottom = 2131.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("16_qigcf")
+texture_pressed = ExtResource("16_qigcf")
+texture_hover = ExtResource("17_qbvob")
 
 [node name="SunMoon_text" type="RichTextLabel" parent="MaskSelection/SunandMoonButton"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -447.0
-offset_top = 1060.0
-offset_right = -67.0
-offset_bottom = 1216.0
+offset_left = -457.333
+offset_top = 1480.0
+offset_right = -77.3333
+offset_bottom = 1636.0
 grow_horizontal = 2
 scale = Vector2(2.7, 2.7)
 size_flags_horizontal = 3
@@ -240,11 +242,11 @@ vertical_alignment = 1
 [node name="RichTextLabel" type="RichTextLabel" parent="MaskSelection/SunandMoonButton"]
 custom_minimum_size = Vector2(500, 350)
 layout_mode = 0
-offset_left = 105.0
-offset_top = 1415.0
-offset_right = 605.0
-offset_bottom = 1765.0
-scale = Vector2(2, 2)
+offset_left = 196.667
+offset_top = 1900.0
+offset_right = 696.667
+offset_bottom = 2250.0
+scale = Vector2(2.5, 2.5)
 theme = SubResource("Theme_8v2cx")
 theme_override_fonts/italics_font = ExtResource("7_6v302")
 theme_override_fonts/bold_font = ExtResource("8_xqjiv")
@@ -257,10 +259,10 @@ horizontal_alignment = 1
 [node name="DottoreButton" type="TextureButton" parent="MaskSelection"]
 unique_name_in_owner = true
 offset_left = 499.0
-offset_top = 172.0
-offset_right = 1609.0
-offset_bottom = 1628.0
-scale = Vector2(0.4, 0.4)
+offset_top = 139.0
+offset_right = 2027.0
+offset_bottom = 2143.0
+scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("11_dgom3")
 texture_pressed = ExtResource("11_dgom3")
 texture_hover = ExtResource("15_dgom3")
@@ -270,10 +272,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -367.5
-offset_top = 1060.0
-offset_right = -67.5
-offset_bottom = 1160.0
+offset_left = -367.333
+offset_top = 1543.33
+offset_right = -67.3334
+offset_bottom = 1643.33
 grow_horizontal = 2
 scale = Vector2(2.7, 2.7)
 size_flags_horizontal = 3
@@ -288,11 +290,11 @@ vertical_alignment = 1
 [node name="RichTextLabel" type="RichTextLabel" parent="MaskSelection/DottoreButton"]
 custom_minimum_size = Vector2(500, 400)
 layout_mode = 0
-offset_left = 105.0
-offset_top = 1350.0
-offset_right = 605.0
-offset_bottom = 1750.0
-scale = Vector2(2, 2)
+offset_left = 180.0
+offset_top = 1860.0
+offset_right = 680.0
+offset_bottom = 2260.0
+scale = Vector2(2.5, 2.5)
 theme = SubResource("Theme_8v2cx")
 theme_override_fonts/italics_font = ExtResource("7_6v302")
 theme_override_fonts/bold_font = ExtResource("8_xqjiv")
@@ -302,6 +304,10 @@ But will booksmarts bore an audience as fickle as the court of Queen Serena?
 [b]Effect: [/b] Scholarly Pursuits"
 horizontal_alignment = 1
 
+[connection signal="pressed" from="Signora" to="." method="_on_signora_pressed"]
+[connection signal="pressed" from="Pierrot" to="." method="_on_pierrot_pressed"]
+[connection signal="pressed" from="Pantalone" to="." method="_on_pantalone_pressed"]
+[connection signal="pressed" from="Tartaglia" to="." method="_on_tartaglia_pressed"]
 [connection signal="button_down" from="MaskSelection/ColombinaButton" to="." method="_on_colombina_button_button_down"]
 [connection signal="pressed" from="MaskSelection/GnagaButton" to="." method="_on_gnaga_button_pressed"]
 [connection signal="pressed" from="MaskSelection/SunandMoonButton" to="." method="_on_sunand_moon_button_pressed"]

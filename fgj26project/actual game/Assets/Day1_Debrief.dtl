@@ -1,0 +1,9 @@
+[background arg="res://actual game/Assets/Harlequin_bg.png" fade="0.0"]
+join Harlequin center
+Harlequin: I see you've spoken to everyone now, little lamb.
+Harlequin: Perhaps you already think you know who [b]Roseus[/b] is.
+Harlequin: This is where this demonstration ends, however.
+leave Harlequin
+You: Thank you kindly for playing the demo of [b]Nights of Cloaks and Lights[/b]!
+You: This game was made by Chride Lassheikki, Janita Nygård, and Max. Juho also helped with defining the idea. Made at FGJ Helsinki Arabia 2026. License\: CC-BY-NC-SA 4.0. \
+This project used Dialogic in Godot under the MIT license.
