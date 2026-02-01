@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://fec5bn4i7u3w"
+path="res://.godot/imported/piano-juho.wav-7d82e6d609b3231d7acc1d3336407bf4.sample"
+
+[deps]
+
+source_file="res://actual game/Assets/Music/piano-juho.wav"
+dest_files=["res://.godot/imported/piano-juho.wav-7d82e6d609b3231d7acc1d3336407bf4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
