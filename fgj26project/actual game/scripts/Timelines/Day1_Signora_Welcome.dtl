@@ -1,5 +1,4 @@
 [background arg="res://actual game/Assets/bg_speaking.png" fade="0.2"]
-audio Juho_piano "res://actual game/Assets/Music/piano-juho.mp3"
 You: Eerie, nigh frenetic mirth fills your ears as you make your way down the stairs into the ballroom.
 You: The lanterns for which the revelries have their names float upon almost invisible strings of spider silk, reminding you all too well how easy it would be to succumb to the glamor and thrall of these Lords and Ladies.
 You: Beyond gilded visors and handwoven frills, inhumanly sharp teeth and eyes stalk.
@@ -13,3 +12,4 @@ Signora: Eat, drink, make merry! These nights three are yours for the taking.
 Signora: Should your delights be shy… remember that no daylight falls upon our floor, and thy mask [b]will[/b] veil your vice.
 You: The Signora winks and the crowd laughs, but your stomach churns. No one at elven court shies away from their pleasure, no matter how cruel or unusual it may be.
 Signora: And, perchance, our very [b]Queen[/b] shall grace these humble walls with her most glorious presence.
+[end_timeline]

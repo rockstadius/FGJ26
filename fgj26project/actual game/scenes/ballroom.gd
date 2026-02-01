@@ -8,6 +8,11 @@ extends Node2D
 @onready var dottore_button = %DottoreButton
 @onready var sunmoon_button = %SunandMoonButton
 @onready var endoverlay = %TheEndOverlay
+@onready var backgroundballroom = %Background_ballroom
+@onready var signora = %Signora
+@onready var pierrot = %Pierrot
+@onready var pantalone = %Pantalone
+@onready var tartaglia = %Tartaglia
 
 #Gameplay variables
 var colombina = Globals.colombina
@@ -18,6 +23,11 @@ var gnaga = Globals.gnaga
 #Do these when starting the game
 func _ready() -> void:
 	mask_selection_overlay.visible = false
+	backgroundballroom.visible = false
+	signora.visible = false
+	pierrot.visible = false
+	pantalone.visible = false
+	tartaglia.visible = false
 	Dialogic.start("Mission_Brief")
 	
 	
@@ -37,6 +47,15 @@ func _on_colombina_button_button_down():
 	sunmoon = false
 	dottore = false
 	mask_selection_overlay.visible = false
+	backgroundballroom.visible = true
+	signora.visible = true
+	pierrot.visible = true
+	pantalone.visible = true
+	tartaglia.visible = true
+	colombina_button.MOUSE_FILTER_IGNORE
+	gnaga_button.MOUSE_FILTER_IGNORE
+	sunmoon_button.MOUSE_FILTER_IGNORE
+	dottore_button.MOUSE_FILTER_IGNORE
 	Dialogic.start("Day1_Signora_Welcome")
 	return # Replace with function body.
 
@@ -47,6 +66,15 @@ func _on_gnaga_button_pressed():
 	sunmoon = false
 	dottore = false
 	mask_selection_overlay.visible = false
+	backgroundballroom.visible = true
+	signora.visible = true
+	pierrot.visible = true
+	pantalone.visible = true
+	tartaglia.visible = true
+	colombina_button.MOUSE_FILTER_IGNORE
+	gnaga_button.MOUSE_FILTER_IGNORE
+	sunmoon_button.MOUSE_FILTER_IGNORE
+	dottore_button.MOUSE_FILTER_IGNORE
 	Dialogic.start("Day1_Signora_Welcome")
 	return
 
@@ -58,6 +86,15 @@ func _on_sunand_moon_button_pressed():
 	Globals.sunmoon = true
 	dottore = false
 	mask_selection_overlay.visible = false
+	backgroundballroom.visible = true
+	signora.visible = true
+	pierrot.visible = true
+	pantalone.visible = true
+	tartaglia.visible = true
+	colombina_button.MOUSE_FILTER_IGNORE
+	gnaga_button.MOUSE_FILTER_IGNORE
+	sunmoon_button.MOUSE_FILTER_IGNORE
+	dottore_button.MOUSE_FILTER_IGNORE
 	Dialogic.start("Day1_Signora_Welcome")
 	return
 
@@ -68,11 +105,20 @@ func _on_dottore_button_pressed():
 	sunmoon = false
 	Globals.dottore = true
 	mask_selection_overlay.visible = false
+	backgroundballroom.visible = true
+	signora.visible = true
+	pierrot.visible = true
+	pantalone.visible = true
+	tartaglia.visible = true
+	colombina_button.MOUSE_FILTER_IGNORE
+	gnaga_button.MOUSE_FILTER_IGNORE
+	sunmoon_button.MOUSE_FILTER_IGNORE
+	dottore_button.MOUSE_FILTER_IGNORE
 	Dialogic.start("Day1_Signora_Welcome")
 	return
 
 func _on_signora_pressed():
-	Dialogic.start("Day1_Signora_Welcome")
+	#Dialogic.start("Day1_Signora_Welcome")
 	return # Replace with function body.
 
 
