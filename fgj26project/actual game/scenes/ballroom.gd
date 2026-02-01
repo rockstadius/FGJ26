@@ -7,6 +7,7 @@ extends Node2D
 @onready var gnaga_button = %GnagaButton
 @onready var dottore_button = %DottoreButton
 @onready var sunmoon_button = %SunandMoonButton
+@onready var endoverlay = %TheEndOverlay
 
 #Gameplay variables
 var colombina = Globals.colombina
@@ -26,7 +27,8 @@ func _process(delta):
 		harlequin_talk_overlay.visible = false
 		mask_selection_overlay.visible = true
 		Globals.dialoguefinished = false
-	
+	if Globals.gameended == true:
+		endoverlay.visible = true
 
 #mask selections
 func _on_colombina_button_button_down():
@@ -40,7 +42,7 @@ func _on_colombina_button_button_down():
 
 
 func _on_gnaga_button_pressed():
-	gnaga = true
+	Globals.gnaga = true
 	colombina = false
 	sunmoon = false
 	dottore = false
@@ -53,7 +55,7 @@ func _on_gnaga_button_pressed():
 func _on_sunand_moon_button_pressed():
 	gnaga = false
 	colombina = false
-	sunmoon = true
+	Globals.sunmoon = true
 	dottore = false
 	mask_selection_overlay.visible = false
 	Dialogic.start("Day1_Signora_Welcome")
@@ -75,16 +77,32 @@ func _on_signora_pressed():
 
 
 func _on_pierrot_pressed():
-	Dialogic.start("Day1_Pierrot")
+	if (Globals.pantalonediscussed == true) and (Globals.pierrotdiscussed == true) and (Globals.tartagliadiscussed == true):
+		Globals.pantalonediscussed = false
+		Dialogic.start("Day1_Debrief")
+		return
+	else:
+		Dialogic.start("Day1_Pierrot")
+
 	return # Replace with function body.
 
 
 func _on_pantalone_pressed():
-	Dialogic.start("Day1_Pantalone")
+	if (Globals.pantalonediscussed == true) and (Globals.pierrotdiscussed == true) and (Globals.tartagliadiscussed == true):
+		Globals.pantalonediscussed = false
+		Dialogic.start("Day1_Debrief")
+		return
+	else:
+		Dialogic.start("Day1_Pantalone")
 	return # Replace with function body.
 	
 
 
 func _on_tartaglia_pressed():
-	Dialogic.start("Day1_Tartaglia")
+	if (Globals.pantalonediscussed == true) and (Globals.pierrotdiscussed == true) and (Globals.tartagliadiscussed == true):
+		Globals.pantalonediscussed = false
+		Dialogic.start("Day1_Debrief")
+		return
+	else:
+		Dialogic.start("Day1_Tartaglia")
 	return # Replace with function body.

@@ -1,3 +1,65 @@
 [background arg="res://actual game/Assets/bg_speaking.png" fade="0.0"]
 join Pantalone right
 Pantalone: Well met!
+if {Globals.dottore} == true:
+	- DOTTORE: Recognize the red he's drinking
+		Pantalone: Ah. A rather disappointing vintage, this.
+		Pantalone: It was a gift of a trader seeking my favor. In hopes of great deals, I believe. 
+		Pantalone: He did not gain it.
+	- Bow your head
+		You: Pantalone smiles, clearly appeased by your humility.
+elif {Globals.colombina} == true:
+	- COLOMBINA: Compliment his look
+		Pantalone: You speak my language, you sweet thing.
+		You: Pantalone winks. You most certainly have his attention now.
+	- Bow your head
+		You: Pantalone smiles, clearly appeased by your humility.
+elif {Globals.gnaga} == true:
+	- GAGNA: Inspect his outfit
+		You: Your keen eyes note faded bloodstains on his lapel. Perhaps the Queen's health is not a given.
+	- Bow your head
+		You: Pantalone smiles, clearly appeased by your humility.
+else:
+	- SUN-AND-MOON: Why is he here?
+		You: Pantalone's spine stiffens.
+		You: The old man's voice loses the braggart edge, and comes off rather soft.
+		Pantalone: Somebody has to temper my sister's cruel intentions.
+		You: As the compulsion of the mask lifts, Pantalone takes a step back.
+		Pantalone: You... you're one of them.
+		You: The man's hands twitch. Panic? Anger? You can't tell.
+		You: One thing is certain: he will not speak to you again.
+		jump pantalone_end
+	- Bow your head
+		You: Pantalone smiles, clearly appeased by your humility.
+Pantalone: I am Pantalone, the Merchant of Lost Souls.
+Pantalone: It is a lucrative trade, for sure.
+label pantalone_choices
+- And rather cruel.
+	Pantalone: Is it? What would you have happen to the humans, satyrs, fauns and other lesser beings who wander into our realm?
+	Pantalone: My contracts offer them ... stability. None of that pesky free will that our Queen so abhors.
+	Pantalone: You don't feel bad for them, do you?
+	jump pantalone_choices
+- How does that work?
+	Pantalone: Do you wish to contract a servant? 
+	Pantalone: Or, perhaps you've met one of those beastly people roaming the lands and want to... turn a profit off the encounter? Tired of playing with the poor creature?
+	Pantalone: They must sign themselves, of course. That is the [b]lore[/b], after all.
+	Pantalone: But a few weeks of hunger or aimless wandering... 
+	jump pantalone_choices
+- I see.
+join Signora left
+Signora: Dearest brother, how odd to see you here.
+Pantalone: I had to see your new paramour for myself.
+Pantalone: He looks rather... meek. You usually go for fuller meals.
+Signora: Tread carefully, now, brother o'mine.
+You: Pantalone puckers his chapped lips and blows the Signora a kiss. 
+Signora: I heard the most curious rumor.
+Pantalone: Here I hoped you'd gone deaf listening to your own voice... Do tell. If you must.
+Signora: What I heard is that several of your contracted Lost Souls have... wiggled their ways out this past moon.
+Signora: Are you growing soft, either of heart or of head?
+Pantalone: Regrettable, that.
+You: Pantalone looks at you.
+Pantalone: Run along now. 
+You: You get the distinct feeling Pantalone has nothing more to say.
+[wait time="0.5"]
+label pantalone_end
+set {Globals.pantalonediscussed} = true

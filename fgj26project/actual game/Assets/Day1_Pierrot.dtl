@@ -1,3 +1,5 @@
 [background arg="res://actual game/Assets/bg_speaking.png" fade="0.0"]
 join Pierrot center
 Pierrot: H-hello...?
+[wait time="0.5"]
+set {Globals.pierrotdiscussed} = true

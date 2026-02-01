@@ -6,5 +6,9 @@ var sunmoon = false
 var gnaga = false
 
 var dialoguefinished = false
-
+var pantalonediscussed = false
+var pierrotdiscussed = false
+var tartagliadiscussed = false
 var daycount = 0
+
+var gameended = false

@@ -1,3 +1,56 @@
 [background arg="res://actual game/Assets/bg_speaking.png" fade="0.0"]
 join Tartaglio center
-Tartaglio: Greetings.
+Tartaglio: Greetings...?
+You: The slender man looks at you, clearly expecting a name in return for his attention.
+if {Globals.dottore} == true:
+	- DOTTORE: Greet him like a fellow scholar
+		Tartaglio: Another who attended the collegium?
+		Tartaglio: Or, one who pretends at it, at least.
+		Tartaglio: Those who adhere to reason are few and far between here, I'm afraid.
+	- Fake a cough
+		Tartaglio: I am not receiving new patients at this moment, I'm afraid.
+		You: The man covers his mouth and turns away.
+	- Another stranger behind a mask
+		Tartaglio: As should be, given the nature of these revelries.
+	- A friend, I hope
+		Tartaglio: A dangerous proposal, that.
+elif {Globals.colombina} == true:
+	- COLOMBINA: Compliment his look
+		Tartaglio: You flatter me,  stranger.
+		Tartaglio: But... I will have you know I am betrothed to the Signora.
+		Tartaglio: She does not look kindly upon rivals.
+	- Fake a cough
+		Tartaglio: I am not receiving new patients at this moment, I'm afraid.
+		You: The man covers his mouth and turns away.
+	- Another stranger behind a mask
+		Tartaglio: As should be, given the nature of these revelries.
+	- A friend, I hope
+		Tartaglio: A friend? What a queer and dangerous proposal.
+elif {Globals.gnaga} == true:
+	- GAGNA: Inspect his outfit
+		You: Your keen eyes note faded bloodstains on his lapel. Perhaps the Queen's health is not a given.
+	- Fake a cough
+		Tartaglio: I am not receiving new patients at this moment, I'm afraid.
+		You: The man covers his mouth and turns away.
+	- Another stranger behind a mask
+		Tartaglio: As should be, given the nature of these revelries.
+	- A friend, I hope
+		Tartaglio: A friend? What a queer and dangerous proposal.
+else:
+	- SUN-AND-MOON: Why is he here?
+		You: You see the physician's lips visibly pale as you turn the power of the mask at him.
+		You: His voice is oddly hollow as he speaks.
+		Tartaglio: I had to rest my eyes upon my beloved Pierrot, if only from a distance.
+		You: He shudders, then tilts his head in confusion.
+		Tartaglio: Ah, excuse me.
+	- Fake a cough
+		Tartaglio: I am not receiving new patients at this moment, I'm afraid.
+		You: The man covers his mouth and turns away for a moment.
+	- Another stranger behind a mask
+		Tartaglio: As should be, given the nature of these revelries.
+	- A friend, I hope
+		Tartaglio: A friend? What a queer and dangerous proposal.
+You: You get the distinct feeling Tartaglia has nothing more to say.
+leave Tartaglio
+[wait time="0.5"]
+set {Globals.tartagliadiscussed} = true

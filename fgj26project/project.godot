@@ -38,6 +38,7 @@ directories/dtl_directory={
 "Day1_Signora_Welcome": "res://actual game/scripts/Timelines/Day1_Signora_Welcome.dtl",
 "Day1_Tartaglia": "res://actual game/Assets/Day1_Tartaglia.dtl",
 "Mission_Brief": "res://actual game/scripts/Timelines/Mission_Brief.dtl",
+"TheEnd": "res://actual game/Assets/TheEnd.dtl",
 "timeline_test": "res://addons/dialogic/Resources/timeline_test.dtl"
 }
 layout/style_directory={
