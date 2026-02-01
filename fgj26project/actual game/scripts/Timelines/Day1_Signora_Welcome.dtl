@@ -1,4 +1,5 @@
 [background arg="res://actual game/Assets/bg_speaking.png" fade="0.2"]
+audio Juho_piano "res://actual game/Assets/Music/piano-juho.mp3"
 You: Eerie, nigh frenetic mirth fills your ears as you make your way down the stairs into the ballroom.
 You: The lanterns for which the revelries have their names float upon almost invisible strings of spider silk, reminding you all too well how easy it would be to succumb to the glamor and thrall of these Lords and Ladies.
 You: Beyond gilded visors and handwoven frills, inhumanly sharp teeth and eyes stalk.
