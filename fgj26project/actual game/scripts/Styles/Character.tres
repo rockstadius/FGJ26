@@ -15,7 +15,10 @@
 [sub_resource type="Resource" id="Resource_xnpm2"]
 script = ExtResource("2_cfqa3")
 scene = ExtResource("1_alqq6")
-overrides = {}
+overrides = {
+"global_font": "\"res://actual game/Assets/Fonts/Alegreya/Alegreya-VariableFont_wght.ttf\"",
+"global_font_size": "32.0"
+}
 
 [sub_resource type="Resource" id="Resource_07sxk"]
 script = ExtResource("2_cfqa3")
@@ -35,7 +38,20 @@ overrides = {}
 [sub_resource type="Resource" id="Resource_0bedd"]
 script = ExtResource("2_cfqa3")
 scene = ExtResource("6_md0pg")
-overrides = {}
+overrides = {
+"bold_font": "\"res://actual game/Assets/Fonts/Alegreya/static/Alegreya-Bold.ttf\"",
+"bold_italics_font": "\"res://actual game/Assets/Fonts/Alegreya/static/Alegreya-ExtraBoldItalic.ttf\"",
+"box_margin_bottom": "25.0",
+"box_size": "Vector2(750, 200)",
+"italics_font": "\"res://actual game/Assets/Fonts/Alegreya/static/Alegreya-MediumItalic.ttf\"",
+"name_label_custom_font_size": "42.0",
+"name_label_font": "\"res://actual game/Assets/Fonts/PirataOne-Regular.ttf\"",
+"name_label_use_global_font": "false",
+"name_label_use_global_font_size": "false",
+"normal_font": "\"res://actual game/Assets/Fonts/Alegreya/static/Alegreya-Regular.ttf\"",
+"text_size": "26.0",
+"text_use_global_size": "false"
+}
 
 [sub_resource type="Resource" id="Resource_iewak"]
 script = ExtResource("2_cfqa3")
@@ -45,7 +61,12 @@ overrides = {}
 [sub_resource type="Resource" id="Resource_c00d6"]
 script = ExtResource("2_cfqa3")
 scene = ExtResource("8_fgiky")
-overrides = {}
+overrides = {
+"font_size_custom": "24.0",
+"font_size_use_global": "false",
+"text_color_hovered": "Color(0.862745, 0.745098, 0.0901961, 1)",
+"text_color_pressed": "Color(1, 0.878431, 0.784314, 1)"
+}
 
 [sub_resource type="Resource" id="Resource_obucd"]
 script = ExtResource("2_cfqa3")
@@ -74,4 +95,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("2_cfqa3")]([])
-metadata/_latest_layer = "12"
+metadata/_latest_layer = "13"

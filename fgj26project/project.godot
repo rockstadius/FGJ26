@@ -27,8 +27,7 @@ directories/dch_directory={
 "Hostes": "res://actual game/scripts/CharacterScripts/Hostes.dch",
 "Pantalone": "res://actual game/scripts/CharacterScripts/Pantalone.dch",
 "Pierrot": "res://actual game/scripts/CharacterScripts/Pierrot.dch",
-"Signora": "res://Signora.dch",
-"Styles/Signora": "res://actual game/scripts/CharacterScripts/Signora.dch",
+"Signora": "res://actual game/scripts/CharacterScripts/Signora.dch",
 "Tartaglio": "res://actual game/scripts/CharacterScripts/Tartaglio.dch",
 "You": "res://actual game/scripts/CharacterScripts/You.dch"
 }

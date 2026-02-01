@@ -2,6 +2,7 @@ extends Node2D
 
 #Everything we want to press or hide
 @onready var mask_selection_overlay = %MaskSelection
+@onready var harlequin_talk_overlay = %HarlequinTalk
 @onready var colombina_button = %ColombinaButton
 @onready var gnaga_button = %GnagaButton
 @onready var dottore_button = %DottoreButton
@@ -15,8 +16,17 @@ var gnaga = Globals.gnaga
 
 #Do these when starting the game
 func _ready() -> void:
-	mask_selection_overlay.visible = true
+	mask_selection_overlay.visible = false
+	Dialogic.start("Mission_Brief")
+	
+	
 
+func _process(delta):
+	if Globals.dialoguefinished == true:
+		harlequin_talk_overlay.visible = false
+		mask_selection_overlay.visible = true
+		Globals.dialoguefinished = false
+	
 
 func _on_colombina_button_button_down():
 	Globals.colombina = true

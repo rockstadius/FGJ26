@@ -1,14 +1,17 @@
-[gd_scene load_steps=19 format=3 uid="uid://bhw5baew0itp5"]
+[gd_scene load_steps=22 format=3 uid="uid://bhw5baew0itp5"]
 
 [ext_resource type="Script" uid="uid://gwwtgthvydc6" path="res://actual game/scenes/ballroom.gd" id="1_r8dgj"]
 [ext_resource type="Texture2D" uid="uid://dkx4u8dbu3i30" path="res://actual game/Assets/bg.png" id="2_eg7oi"]
-[ext_resource type="Texture2D" uid="uid://vydp1y4tu4ev" path="res://actual game/Assets/Characters/Untitled_Artwork.png" id="3_mtv8q"]
+[ext_resource type="Texture2D" uid="uid://bvw650emj166c" path="res://actual game/Assets/Characters/Signora.PNG" id="3_8v2cx"]
+[ext_resource type="Texture2D" uid="uid://vp1c17lfnr3x" path="res://actual game/Assets/Characters/Pantalone.png" id="4_8v2cx"]
 [ext_resource type="Texture2D" uid="uid://njtdtrvgoj2d" path="res://actual game/Assets/Characters/Pierrot.png" id="4_b6i6o"]
 [ext_resource type="FontFile" uid="uid://cvqoidi4qslw" path="res://actual game/Assets/Fonts/PirataOne-Regular.ttf" id="4_c7cqp"]
 [ext_resource type="Texture2D" uid="uid://b00vabqjhgh2m" path="res://actual game/Assets/Masks/Mask_Colombina.png" id="5_n1on7"]
 [ext_resource type="Texture2D" uid="uid://c58gnjfr7shcg" path="res://actual game/Assets/Masks/Mask_Colombina_hover.png" id="6_6v302"]
+[ext_resource type="Texture2D" uid="uid://cgl0agcbsi4nc" path="res://actual game/Assets/Characters/Tartaglio.png" id="6_8spqq"]
 [ext_resource type="FontFile" uid="uid://bmgwjoq4e66nb" path="res://actual game/Assets/Fonts/Alegreya/Alegreya-VariableFont_wght.ttf" id="6_cl0dy"]
 [ext_resource type="FontFile" uid="uid://dududt788b8ta" path="res://actual game/Assets/Fonts/Alegreya/static/Alegreya-Italic.ttf" id="7_6v302"]
+[ext_resource type="Texture2D" uid="uid://dykakpno66mrb" path="res://actual game/Assets/Harlequin_bg.png" id="7_8spqq"]
 [ext_resource type="FontFile" uid="uid://bdxdfc8m80qvm" path="res://actual game/Assets/Fonts/Alegreya/static/Alegreya-Bold.ttf" id="8_xqjiv"]
 [ext_resource type="Texture2D" uid="uid://bts14giljq63a" path="res://actual game/Assets/Masks/Mask_Gnaga.png" id="9_nxnfu"]
 [ext_resource type="Texture2D" uid="uid://k5rcqvrsqv3t" path="res://actual game/Assets/Masks/Mask_Moon.png" id="10_r8dgj"]
@@ -28,28 +31,59 @@ default_font_size = 36
 [node name="Ballroom (select)" type="Node2D"]
 script = ExtResource("1_r8dgj")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(572, 330)
-scale = Vector2(0.8, 0.8)
+[node name="Background_ballroom" type="Sprite2D" parent="."]
+position = Vector2(962, 527)
+scale = Vector2(0.9, 0.9)
 texture = ExtResource("2_eg7oi")
 
-[node name="TextureButton" type="TextureButton" parent="."]
-offset_left = 24.0
-offset_top = 418.0
-offset_right = 453.0
-offset_bottom = 1118.0
+[node name="Signora" type="TextureButton" parent="."]
+unique_name_in_owner = true
+offset_left = 1579.0
+offset_top = 9.0
+offset_right = 3432.0
+offset_bottom = 3037.0
+scale = Vector2(0.18, 0.18)
+texture_normal = ExtResource("3_8v2cx")
+texture_hover = ExtResource("3_8v2cx")
+
+[node name="Pierrot" type="TextureButton" parent="."]
+unique_name_in_owner = true
+offset_left = 1285.0
+offset_top = 366.0
+offset_right = 3138.0
+offset_bottom = 3394.0
+scale = Vector2(0.18, 0.18)
 texture_normal = ExtResource("4_b6i6o")
 texture_hover = ExtResource("4_b6i6o")
 
-[node name="TextureButton" type="TextureButton" parent="TextureButton"]
-layout_mode = 0
-offset_left = 1383.0
-offset_top = -739.0
-offset_right = 2791.0
-offset_bottom = 1563.0
-scale = Vector2(0.29634, 0.29634)
-texture_normal = ExtResource("3_mtv8q")
-texture_hover = ExtResource("3_mtv8q")
+[node name="Pantalone" type="TextureButton" parent="."]
+unique_name_in_owner = true
+offset_left = 885.0
+offset_top = 435.0
+offset_right = 2738.0
+offset_bottom = 3463.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("4_8v2cx")
+texture_pressed = ExtResource("4_8v2cx")
+stretch_mode = 4
+
+[node name="Tartaglia" type="TextureButton" parent="."]
+unique_name_in_owner = true
+offset_left = 156.0
+offset_top = 421.0
+offset_right = 2009.0
+offset_bottom = 3449.0
+scale = Vector2(0.22, 0.22)
+texture_normal = ExtResource("6_8spqq")
+texture_pressed = ExtResource("6_8spqq")
+stretch_mode = 4
+
+[node name="HarlequinTalk" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="HarlequinBackground" type="Sprite2D" parent="HarlequinTalk"]
+position = Vector2(980, 540)
+texture = ExtResource("7_8spqq")
 
 [node name="MaskSelection" type="Node2D" parent="."]
 unique_name_in_owner = true
@@ -57,7 +91,7 @@ unique_name_in_owner = true
 [node name="ColorRect" type="ColorRect" parent="MaskSelection"]
 offset_right = 1920.0
 offset_bottom = 1080.0
-color = Color(0.215686, 0.211765, 0.2, 1)
+color = Color(0.142591, 0.128106, 0.121828, 1)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="MaskSelection"]
 anchors_preset = 5

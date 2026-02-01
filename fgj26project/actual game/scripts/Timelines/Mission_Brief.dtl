@@ -1,12 +1,13 @@
-join Harlequin left 
-join You center
+[background arg="res://actual game/Assets/Harlequin_bg.png" fade="0.0"]
+join Harlequin center
+join You right
 Harlequin: Your nerve is commendable, little lamb.
 Harlequin: You know what lies at stake. Were I able to go in your stead, surely I would.
 Harlequin: Not every secret is mine to reveal, but I would be a poor contributor to our cause indeed if I sent you into the den of wolves [i]completely[/i] unprepared.
-Harlequin: You must find [b]Roseus[/b], our mysterious benefactor. We have them narrowed down to three. 
+Harlequin: You must find [b]Roseus[/b], our mysterious benefactor. We have them narrowed down to three.
 Harlequin: [b]Pierrot[/b], the youngest daughter of house Moss, [b]Pantalone[/b] the Merchant of Lost Souls, or [b]Tartaglia[/b], the Queen’s personal physician.
 label harlequin_choices
-Harlequin: Now, ask what’s on your mind. 
+Harlequin: Now, ask what’s on your mind.
 - What do you need me to do?
 	Harlequin: When you arrive at the revelries, identify our three candidates.
 	Harlequin: Talk to them. Find out which one is Roseus.
@@ -18,7 +19,7 @@ Harlequin: Now, ask what’s on your mind.
 	Harlequin: They write in a refined voice, but that may be an act.
 	Harlequin: What else… Roseus means rose, and as such I would expect some thorns.
 	Harlequin: Does that help you? No?
-	Harlequin: It’s not too late to back out, [i]Agnellino[/i]. 
+	Harlequin: It’s not too late to back out, [i]Agnellino[/i].
 	jump harlequin_choices
 - Who are you, really?
 	Harlequin: Ahh, let’s focus on unmasking one mysterious gentleperson at a time.
@@ -26,13 +27,13 @@ Harlequin: Now, ask what’s on your mind.
 - I have no questions.
 Harlequin: There we have it. Find Roseus. Gain his ear, his trust, and his loyalty to our cause.
 Harlequin: Or hers, I suppose. Roseus has been… slippery, so far.
-Harlequin: But remember, the Queen’s men, the Wolves of Twilight, are in attendance. 
+Harlequin: But remember, the Queen’s men, the Wolves of Twilight, are in attendance.
 Harlequin: Do. [pause=0.5]Not.[pause=0.5] Get.[pause=0.5] Caught.
 Harlequin: Don't let them sniff you out lest they swallow you whole.
 Harlequin: Quite simple, [pause=0.5]is it not?
 - Child’s play, really
 - What could go wrong?
-- Am I in danger? 
+- Am I in danger?
 You: [i]The corners of the Harlequin’s mouth lift into a smirk.[/i]
 Harlequin: Now choose your mask for the night with care.
-join Harlequin left
+set {Globals.dialoguefinished} = true
