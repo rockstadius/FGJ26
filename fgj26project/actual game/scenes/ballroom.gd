@@ -125,6 +125,11 @@ func _on_signora_pressed():
 func _on_pierrot_pressed():
 	if (Globals.pantalonediscussed == true) and (Globals.pierrotdiscussed == true) and (Globals.tartagliadiscussed == true):
 		Globals.pantalonediscussed = false
+		backgroundballroom.visible = false
+		signora.visible = false
+		pierrot.visible = false
+		pantalone.visible = false
+		tartaglia.visible = false
 		Dialogic.start("Day1_Debrief")
 		return
 	else:
@@ -136,6 +141,11 @@ func _on_pierrot_pressed():
 func _on_pantalone_pressed():
 	if (Globals.pantalonediscussed == true) and (Globals.pierrotdiscussed == true) and (Globals.tartagliadiscussed == true):
 		Globals.pantalonediscussed = false
+		backgroundballroom.visible = false
+		signora.visible = false
+		pierrot.visible = false
+		pantalone.visible = false
+		tartaglia.visible = false
 		Dialogic.start("Day1_Debrief")
 		return
 	else:
@@ -147,6 +157,11 @@ func _on_pantalone_pressed():
 func _on_tartaglia_pressed():
 	if (Globals.pantalonediscussed == true) and (Globals.pierrotdiscussed == true) and (Globals.tartagliadiscussed == true):
 		Globals.pantalonediscussed = false
+		backgroundballroom.visible = false
+		signora.visible = false
+		pierrot.visible = false
+		pantalone.visible = false
+		tartaglia.visible = false
 		Dialogic.start("Day1_Debrief")
 		return
 	else:

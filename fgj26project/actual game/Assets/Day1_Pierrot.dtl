@@ -1,5 +1,57 @@
 [background arg="res://actual game/Assets/bg_speaking.png" fade="0.0"]
-join Pierrot center
+join Pierrot left
 Pierrot: H-hello...?
-[wait time="0.5"]
+You: The horse charms at the hem of the young elf's striped merry-go-round dress jingle as she sways in place.
+if {Globals.dottore} == true:
+	- DOTTORE: Explain the etymology of the word 'carousel'
+		Pierrot: I... did not know that. Did you learn that in a... book?
+		Pierrot: Forgive me. That came out meaner than I intended.
+		Pierrot: I wish I knew how to read, is what I meant.
+		- I could teach you
+			Pierrot: Oo! I must decline. Such tutelage would be quite the undertaking to take on, and I'm afraid I have little to offer in return.
+			Pierrot: One should never find oneself indebted if at all avoidable, my father used to say.
+			You: Pierrot takes a sip of the deep red wine in her glass.
+		- Why don't you know how?
+			Pierrot: I was learning, up until recently. A... kind soul was tutoring me.
+			You: Pierrot takes a sip of the deep red wine in her glass.
+			Pierrot: As it turns out, there are hearts more important than that of little me.
+	- Greet her
+		You: Pierrot curtsies.
+		Pierrot: I do hope your night has been pleasant so far. Don't let my anguish bring you down.
+		You: Pierrot takes a sip of the deep red wine in her glass.
+elif {Globals.colombina} == true:
+	- COLOMBINA: Comfort her
+		Pierrot: Oh sister, your words are dear to me but my anguish they cannot leaven.
+		Pierrot: I shan't bore you with my woeful tale. It is a night of celebration, is it not?
+		You: Pierrot takes a sip of the deep red wine in her glass.
+	- Greet her
+		You: Pierrot curtsies.
+		Pierrot: I do hope your night has been pleasant so far. Don't let my anguish bring you down.
+		You: Pierrot takes a sip of the deep red wine in her glass.
+elif {Globals.gnaga} == true:
+	- GNAGA: Inspect her outfit
+		You: Compared to the others, this girl's dress is expertly made though of pieced fabrics, perhaps reused. On a finger on her left glove, an indent from a ring recently removed.
+		- GNAGA: Ask her about the ring
+			You: She pulls the hand behind her back.
+			Pierrot: It's noticeable, isn't it?
+			You: She sighs.
+			Pierrot: Look at him... the Signora's new toy.
+			You: Pierrot takes a sip of the deep red wine in her glass.
+		- Compliment her dress
+			Pierrot: Ooh, thank you. Don't tell anyone but... I made it myself.
+	- Greet her
+		You: Pierrot curtsies.
+		Pierrot: I do hope your night has been pleasant so far. Don't let my anguish bring you down.
+		You: Pierrot takes a sip of the deep red wine in her glass.
+else:
+	- SUN-AND-MOON: Why are you sad?
+		Pierrot: I am always sad. However...
+		You: Pierrot's posture visibly relaxes, as if she's relieved to unburden herself on you.
+		Pierrot: I am also heartbroken.
+		Pierrot: The man I love has chosen another.
+	- Greet her
+		You: Pierrot curtsies.
+		Pierrot: I do hope your night has been pleasant so far. Don't let my anguish bring you down.
+		You: Pierrot takes a sip of the deep red wine in her glass.
+Pierrot: Just like the merry-go-round, it is the nature of circumstances to turn.
 set {Globals.pierrotdiscussed} = true

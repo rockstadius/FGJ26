@@ -27,7 +27,7 @@ elif {Globals.colombina} == true:
 	- A friend, I hope
 		Tartaglio: A friend? What a queer and dangerous proposal.
 elif {Globals.gnaga} == true:
-	- GAGNA: Inspect his outfit
+	- GNAGA: Inspect his outfit
 		You: Your keen eyes note faded bloodstains on his lapel. Perhaps the Queen's health is not a given.
 	- Fake a cough
 		Tartaglio: I am not receiving new patients at this moment, I'm afraid.
