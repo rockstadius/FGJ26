@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1769966919|36763168738';
+const CACHE_VERSION = '1770064369|57058407756';
 /** @type {string} */
 const CACHE_PREFIX = 'FGJ26Project-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
