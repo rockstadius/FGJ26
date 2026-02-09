@@ -1,3 +1,4 @@
-[background arg="#191919ff" fade="0.0"]
+[background arg="res://actual game/StartScreen/Background.PNG" fade="0.0"]
 set {Globals.gameended} = true
+leave --All--
 You: ~ The End ~

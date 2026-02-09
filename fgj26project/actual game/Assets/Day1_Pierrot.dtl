@@ -1,5 +1,7 @@
 [background arg="res://actual game/Assets/bg_speaking.png" fade="0.0"]
 join Pierrot left
+if {Globals.tartagliadistraction} == true and {Globals.pantalonesister} == false:
+	jump: pierrot_pissed
 Pierrot: H-hello...?
 You: The horse charms at the hem of the young elf's striped merry-go-round dress jingle as she sways in place.
 if {Globals.dottore} == true:
@@ -55,3 +57,35 @@ else:
 		You: Pierrot takes a sip of the deep red wine in her glass.
 Pierrot: Just like the merry-go-round, it is the nature of circumstances to turn.
 set {Globals.pierrotdiscussed} = true
+label pierrot_pissed
+You: Hand shaking, the young girl seethes with barely contained rage. She downs the rest of her glass, then wipes the wine off her lips with the back of her glove.
+Pierrot: How can they be so entirely cruel?
+You: You follow her glare to where Signora leans over Tartaglia, her hand resting on his lapel.
+Pierrot: This settles it. I will stay quiet no longer.
+You: She looks at you.
+Pierrot: Forgive me for being so forward, but I believe you host no adoration for the Signora.
+Pierrot: Neither do I. She has set her eyes and hands on the one I hold dear.
+You: The drunken elf sways in place.
+Pierrot: And while I can accept his choice, I... fear he's made it on a falsehood. I believe she has lied to him.
+Pierrot: Would you be willing to help me prove the truth I know in my heart?
+- What's in it for me?
+	Pierrot: Perhaps we can one another?
+	Pierrot: You wouldn't know it looking at me but...
+	You: She leans closer. You can smell the sweet wine on her breath.
+	Pierrot: We hunt in packs, if you catch my drift.
+	You: The hairs at the back of your neck lift in fear, but you keep your face neutral. A close call.
+	Pierrot: Come find me tomorrow, and I will tell you what I know. 
+- I will be true love's servant
+	You: Pierrot takes a step toward you as if to embrace you, then hesitates and instead gives you a wobbly smile.
+	Pierrot: I truly hope I will one day get to call you my friend.
+	Pierrot: We hunt in packs, if you catch my drift.
+	You: The hairs at the back of your neck lift in fear, but you keep your face neutral.
+	Pierrot: Come find me tomorrow, and I will tell you what I know. 
+- I can't risk the Signora's wrath
+	Pierrot: Tsk. Weak like the rest of them.
+	Pierrot: Speak to me once you change your mind...
+	You: She lowers her voice into a mutter as you're about to turn.
+	Pierrot: ... [i]changeling[/i] coward.
+	You: The hairs at the back of your neck lift in fear, but you keep your face neutral.
+	Pierrot: Come find me tomorrow, and I will tell you what I know. 
+[end_timeline]

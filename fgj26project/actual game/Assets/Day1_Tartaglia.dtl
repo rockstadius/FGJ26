@@ -1,5 +1,14 @@
 [background arg="res://actual game/Assets/bg_speaking.png" fade="0.0"]
 join Tartaglio center
+if {Globals.tartagliadistraction} == true and {Globals.pantalonesister} == false:
+	jump tartaglia_signoratalk
+elif {Globals.tartagliadiscussed} == true and {Globals.pantalonediscussed} == true:
+	jump tartaglia_distraction
+elif {Globals.tartagliadiscussed} == true:
+	jump tartaglia_retalk
+else:
+	jump tartaglia_start
+label tartaglia_start
 Tartaglio: Greetings...?
 You: The slender man looks at you, clearly expecting a name in return for his attention.
 if {Globals.dottore} == true:
@@ -51,6 +60,104 @@ else:
 	- A friend, I hope
 		Tartaglio: A friend? What a queer and dangerous proposal.
 You: You get the distinct feeling Tartaglia has nothing more to say.
+set {Globals.tartagliadiscussed} = true
 leave Tartaglio
 [wait time="0.5"]
-set {Globals.tartagliadiscussed} = true
+[end_timeline]
+label tartaglia_retalk
+You: Tartaglia is reading a leather-clad black journal, but he puts it away as you approach.
+Tartaglio: Greetings... again. How may I help you?
+- Ask about him
+	Tartaglio: What is there to know?
+	Tartaglio: Tartaglia is the name, and medicine is my trade. It is no secret that I work for our Lady most beloved.
+	jump tartaglia_retalk
+- Ask about the Signora
+	You: Tartaglia blushes below his mask.
+	Tartaglio: The Signora? We are courting.
+	Tartaglio: The match was not... one I would have suggested myself. But the Queen herself saw it fit for me, as a man from humble beginnings, to choose one who could elevate my status.
+	Tartaglio: As a wealthy widow of one of the oldest families in Radelma, the Signora was the most befitting.
+	- Do you love her?
+		Tartaglio: What an odd question.
+		You: Discomfort. Whether it's from the question being inappropriate or the answer you can't tell.
+	- So it's about money.
+		Tartaglio: I have been told marriages, in general, are.
+		Tartaglio: No matter what one personally... hoped.
+		You: Resignation hangs Tartaglia's shoulders.
+	jump tartaglia_retalk
+- Ask about Pantalone
+	Tartaglio: Pardon, as I know it's the preferred pastime of the court, but I do not partake in gossip of those who I do not know.
+	jump tartaglia_retalk
+- Ask about Pierrot
+	You: Tartaglia flinches. He lowers his voice before speaking.
+	Tartaglio: Please do not ask me about her again this close to the Signora.
+	jump tartaglia_retalk
+- Bid him good night.
+	Tartaglio: And a good night to you as well.
+[end_timeline]
+
+label tartaglia_distraction
+You: Tartaglia is reading a leather-clad black journal, but he puts it away as you approach.
+Tartaglio: Greetings...yet again. How may I help you?
+- Ask him to talk to the Signora
+	Tartaglio: You wish me to go speak to my betrothed? She's currently speaking to her brother, Pantalone.
+	You: The man seems rather terrified at the thought of spending time alone with his betrothed.
+	Tartaglio: I'm not sure I should interrupt them.
+	- She would appreciate you showing her interest in public
+		Tartaglio: Yes, she would, now that you mention it. 
+	- I need to speak to Pantalone alone
+		Tartaglio: You do? What about? No wait, I don't care much.
+	Tartaglio: I suppose...
+	Tartaglio: What should I even speak to her about?
+	Tartaglio: I... I could ask her about the budget of a party such as this one. It should be comparable to our nuptials, right?
+	- A most excellent idea sir
+		Tartaglio: Ah. She would find that utterly boring, you mean.
+		Tartaglio: You mock me, but I was not brought up in these circles. I can't always tell what... common ground there is.
+		You: He looks at the Signora, head askance.
+	- Are you sure she can afford it?
+		Tartaglio: She wouldn't throw the Nights of Cloaks and Lights if she couldn't. She wouldn't. Would she?
+		You: He looks at the Signora, head askance.
+	Tartaglio: Alright. You go speak to them, and I'll come over and ask for a moment of her time.
+	You: You nod, and Tartaglia looks visibly relieved.
+	Tartaglio: I will see you shortly, then.
+	set {Globals.tartagliadistraction} = true
+	[end_timeline]
+- Ask about him
+	Tartaglio: What is there to know?
+	Tartaglio: Tartaglia is the name, and medicine is my trade. It is no secret that I work for our Lady most beloved.
+	jump tartaglia_distraction
+	
+- Ask about the Signora
+	You: Tartaglia blushes below his mask.
+	Tartaglio: The Signora? We are courting.
+	Tartaglio: The match was not... one I would have suggested myself. But the Queen herself saw it fit for me, as a man from humble beginnings, to choose one who could elevate my status.
+	Tartaglio: As a wealthy widow of one of the oldest families in Radelma, the Signora was the most befitting.
+	- Do you love her?
+		Tartaglio: What an odd question.
+		You: Discomfort. Whether it's from the question being inappropriate or the answer you can't tell.
+	- So it's about money.
+		Tartaglio: I have been told marriages, in general, are.
+		Tartaglio: No matter what one personally... hoped.
+		You: Resignation hangs Tartaglia's shoulders.
+	jump tartaglia_distraction
+
+- Ask about Pantalone
+	Tartaglio: Pardon, as I know it's the preferred pastime of the court, but I do not partake in gossip of those who I do not know.
+	jump tartaglia_distraction
+
+- Ask about Pierrot
+	You: Tartaglia flinches. He lowers his voice before speaking.
+	Tartaglio: Please do not ask me about her again this close to the Signora.
+	jump tartaglia_distraction
+
+- Bid him good night.
+	Tartaglio: And a good night to you as well.
+[end_timeline]
+label tartaglia_signoratalk
+join Tartaglio left
+join Signora right
+Signora: There was nothing more to do, really. After such an embarrassing lack of obedience I had to take the iron to her hand.
+Signora: How else would my other servants learn not to burn my dresses?
+Signora: Humans are so... inconsistent. But I refuse to think some of them couldn't learn basic decency, given a sharp enough stick.
+You: Tartaglia stares down at his feet as the Signora blathers on about the various cruel ways in which she punishes her servants for the tiniest infractions.
+You: You could stand here feeling sick to your stomach all night, but you doubt you would learn anything of actual interest.
+[end_timeline]

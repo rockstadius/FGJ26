@@ -1,4 +1,12 @@
 [background arg="res://actual game/Assets/bg_speaking.png" fade="0.0"]
+if {Globals.pantalonesister} == true and {Globals.tartagliadistraction} == true:
+	jump pantalone_sister
+elif {Globals.pantalonesister} == true:
+	jump pantalone_sister
+elif {Globals.sistergone} == true:
+	jump pantalone_sistergone
+elif {Globals.pantalonequest} == true:
+	jump pantalone_quest
 join Pantalone right
 Pantalone: Well met!
 if {Globals.dottore} == true:
@@ -47,7 +55,7 @@ label pantalone_choices
 	jump pantalone_choices
 - I see.
 join Signora left
-You: The tell tale steps of the night's hostess descend the stairs.
+You: The telltale steps of the night's hostess descend the stairs.
 Signora: Dearest brother, how odd to see you here.
 Pantalone: I had to see your new paramour for myself.
 Pantalone: He looks rather... meek. You usually go for fuller meals.
@@ -62,5 +70,108 @@ You: Pantalone looks at you.
 Pantalone: Run along now.
 You: You get the distinct feeling Pantalone has nothing more to say as long as his sister is present.
 [wait time="0.5"]
-label pantalone_end
 set {Globals.pantalonediscussed} = true
+set {Globals.pantalonesister} = true
+label pantalone_end
+[end_timeline]
+label pantalone_sister
+join Pantalone right
+join Signora left
+Signora: I tell you, she was wearing black to my soirée simply to spite me!
+You: The Signora is talking loudly at her brother, but the topic seems as grating to Pantalone as it is to you.
+Signora: Yes, her mother had died, but it was [i]weeks[/i] ago! If, say, you were to run down the curtain, you wouldn't expect [i]me[/i] to wear such dreary robes for long, would you?
+You: Pantalone looks at you as if he'd be glad to be put out of this misery.
+if {Globals.tartagliadistraction} == true:
+	join Tartaglio center 
+	Tartaglio: Pardon my intrusion, but may I s-speak to the Signora?
+	You: The physician clears his throat.
+	Tartaglio: Over there?
+	Signora: My my, are you forward tonight.
+	Pantalone: By all means.
+	leave Signora 
+	leave Tartaglio 
+	set {Globals.pantalonesister} = false
+	jump pantalone_sistergone
+else:
+	You: You get the distinct feeling Pantalone has nothing more to say as long as his sister is present.
+	[end_timeline]
+label pantalone_sistergone
+join Pantalone right
+Pantalone: Ah, finally a moment's peace.
+Pantalone: Well, until you appeared.
+if {Globals.dottore} == true:
+	You: [b]DOTTORE[/b] – Pantalone swirls his wine in the crystal goblet, but his eyes are on you.
+elif {Globals.colombina} == true:
+	You: [b]COLOMBINA[/b] – You sense a bit of a genuine smile below the mask despite his sarcastic tone.
+elif {Globals.gnaga} == true:
+	You: [b]GNAGA[/b] – You don't fail to notice that while the man seems less tense with his sister gone, his fingers still jitter.
+else:
+	You: He looks at you intently.
+label pantalone_sistergone_choices
+Pantalone: Now that you have my attention, what's on your mind?
+- Ask about the Signora and Tartaglia
+	Pantalone: Ahh, my sister and the good physician Tartaglia.
+	Pantalone: A rather recent development.
+	Pantalone: What my sister wants, she takes.
+	Pantalone: Why she wants such a measly little man? That's not for me to say.
+	Pantalone: As far as I can tell, he has no fortune to help her.
+	label pantalone_signora_choices
+	- Help her?
+		Pantalone: My sister is far more eager to spend her wealth than earn it.
+		Pantalone: A man of reason might just be what helps her hot head cool.
+		Pantalone: Or... not.
+		Pantalone: Personally, I believe she'll bleed what little he has to fund.
+		jump pantalone_signora_choices
+	- Ask how the two met
+		Pantalone: The Signora and Tartaglia?
+		Pantalone: As you know, Tartaglia is new at this court of ours. A learned man.
+		if {Globals.dottore} == true:
+			Pantalone: Much like yourself, I suppose.
+		Pantalone: He was appointed by the Queen herself, plucked out of the collegium.
+		Pantalone: My sister heard and, newly widowed, had to see for herself what intellect could persuade our beloved Lady to take on a mediciner after so many centuries of turning quacks and leeches, mountebanks and charlatans at the gate.
+		Pantalone: Perhaps something ails her, mm?
+		Pantalone: May She reign eternal.
+		jump pantalone_signora_choices
+	- Ask about her earlier developments
+		Pantalone: Usually, I wouldn't sully what little is left of our name.
+		Pantalone: However... She has rather annoyed me tonight.
+		Pantalone: Before Tartaglia, there was Flavio, and before Flavio, there was Mercutio. Before him there was Arabella...
+		Pantalone: Before her, Doric, and before Doric, it was either Michaellino or Merced, or both, depending on how you count, but we're not counting because we'd rather soon run out of fingers...
+		Pantalone: ... as those only cover the last three years or so.
+		You: The cheer in Pantalone's voice sounds rather forced.
+		Pantalone: They're all as good as dead in the eyes of the court, if you didn't know. My sister...
+		Pantalone: Hm.
+		You: Pantalone waggles his thick index finger at you.
+		Pantalone: You're a curious one, aren't you?
+		jump pantalone_signora_choices
+	- I want to ask something else.
+		Pantalone: By all means.
+		jump pantalone_sistergone_choices
+- Ask about him
+	Pantalone: You wish to know me even better? Flattering.
+	Pantalone: Some familiarity only comes with time.
+	Pantalone: You and I have not shared much of that yet.
+	jump pantalone_sistergone_choices
+- Nothing.
+	Pantalone: Nothing!? Void-minded and vapid like the rest, are you?
+	Pantalone: Or perhaps you simply want to let me sit with my own musings, hm? I do appreciate the silence.
+You: Pantalone looks you over in silence for a while, tapping his glass with his fingers.
+Pantalone: I can tell you are trying to get in my good graces.
+Pantalone: What I cannot, is why.
+Pantalone: Tell you what. I have a way for you to prove your, ahh, good intentions to me.
+Pantalone: The good doctor Tartaglia you saw earlier, how well do you know him?
+- LIE: I know him well
+	Pantalone: A friend of yours, or an enemy perhaps?
+- TRUTH: We have spoken
+	Pantalone: Good, as this will require you to get close to his person.
+- LIE: Not at all
+	Pantalone: Truly? I could have sworn I saw you two speaking just then.
+label pantalone_quest
+Pantalone: Tartaglia carries a thin black journal into which he jots notes on his patients.
+Pantalone: As my sister's next of kin, I... worry for her health.
+Pantalone: I would much like to rest my eyes upon the journal for a moment or two.
+Pantalone: This is where I would need your assistance.
+Pantalone: Acquire the journal for me, and I would... be amenable to lend you my ear again.
+Pantalone: Tomorrow night, find me once you have the journal.
+You: Pantalone turns away from you in dismissal.
+set {Globals.pantalonequest} = true

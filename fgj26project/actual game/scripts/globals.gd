@@ -9,6 +9,10 @@ var dialoguefinished = false
 var pantalonediscussed = false
 var pierrotdiscussed = false
 var tartagliadiscussed = false
+var pantalonesister = false
+var pantalonequest = false
+var tartagliadistraction = false
+
 var daycount = 0
 
 var gameended = false
