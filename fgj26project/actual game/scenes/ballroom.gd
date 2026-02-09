@@ -111,6 +111,16 @@ func endtheday():
 	tartaglia.visible = false
 	Dialogic.start("Day1_Debrief")
 	endoverlay.visible = true
+	Globals.dialoguefinished = false
+	Globals.pantalonediscussed = false
+	Globals.pierrotdiscussed = false
+	Globals.tartagliadiscussed = false
+	Globals.pantalonesister = false
+	Globals.pantalonequest = false
+	Globals.tartagliadistraction = false
+	Globals.daycount = 0
+	Globals.gameended = false
+	Globals.sistergone = false
 
 func _on_sunand_moon_button_pressed():
 	gnaga = false

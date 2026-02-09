@@ -91,6 +91,7 @@ if {Globals.tartagliadistraction} == true:
 	leave Signora 
 	leave Tartaglio 
 	set {Globals.pantalonesister} = false
+	set {Globals.sistergone} = true
 	jump pantalone_sistergone
 else:
 	You: You get the distinct feeling Pantalone has nothing more to say as long as his sister is present.

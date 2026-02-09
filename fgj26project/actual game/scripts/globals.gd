@@ -12,6 +12,7 @@ var tartagliadiscussed = false
 var pantalonesister = false
 var pantalonequest = false
 var tartagliadistraction = false
+var sistergone = false
 
 var daycount = 0
 

@@ -1,7 +1,10 @@
 [background arg="res://actual game/Assets/bg_speaking.png" fade="0.0"]
 join Pierrot left
 if {Globals.tartagliadistraction} == true and {Globals.pantalonesister} == false:
-	jump: pierrot_pissed
+	jump pierrot_pissed
+else:
+	jump pierrot_start
+label pierrot_start
 Pierrot: H-hello...?
 You: The horse charms at the hem of the young elf's striped merry-go-round dress jingle as she sways in place.
 if {Globals.dottore} == true:
@@ -57,6 +60,7 @@ else:
 		You: Pierrot takes a sip of the deep red wine in her glass.
 Pierrot: Just like the merry-go-round, it is the nature of circumstances to turn.
 set {Globals.pierrotdiscussed} = true
+[end_timeline]
 label pierrot_pissed
 You: Hand shaking, the young girl seethes with barely contained rage. She downs the rest of her glass, then wipes the wine off her lips with the back of her glove.
 Pierrot: How can they be so entirely cruel?
@@ -74,18 +78,18 @@ Pierrot: Would you be willing to help me prove the truth I know in my heart?
 	You: She leans closer. You can smell the sweet wine on her breath.
 	Pierrot: We hunt in packs, if you catch my drift.
 	You: The hairs at the back of your neck lift in fear, but you keep your face neutral. A close call.
-	Pierrot: Come find me tomorrow, and I will tell you what I know. 
+	Pierrot: Come find me tomorrow, and I will tell you what I know.
 - I will be true love's servant
 	You: Pierrot takes a step toward you as if to embrace you, then hesitates and instead gives you a wobbly smile.
 	Pierrot: I truly hope I will one day get to call you my friend.
 	Pierrot: We hunt in packs, if you catch my drift.
 	You: The hairs at the back of your neck lift in fear, but you keep your face neutral.
-	Pierrot: Come find me tomorrow, and I will tell you what I know. 
+	Pierrot: Come find me tomorrow, and I will tell you what I know.
 - I can't risk the Signora's wrath
 	Pierrot: Tsk. Weak like the rest of them.
 	Pierrot: Speak to me once you change your mind...
 	You: She lowers her voice into a mutter as you're about to turn.
 	Pierrot: ... [i]changeling[/i] coward.
 	You: The hairs at the back of your neck lift in fear, but you keep your face neutral.
-	Pierrot: Come find me tomorrow, and I will tell you what I know. 
+	Pierrot: Come find me tomorrow, and I will tell you what I know.
 [end_timeline]

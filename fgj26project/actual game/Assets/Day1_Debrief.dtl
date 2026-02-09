@@ -1,6 +1,24 @@
 [background arg="res://actual game/Assets/Harlequin_bg.png" fade="0.5"]
 join Harlequin center
 Harlequin: I see you've spoken to everyone now, little lamb.
+if {Globals.colombina} == true:
+	Harlequin: And I also see you chose the mask of Colombina.
+	Harlequin: I wonder how much you know of her history, and of my mine...
+	You: The Harlequin chuckles.
+	Harlequin: Be that as it may. I choose to be flattered.
+elif {Globals.dottore} == true:
+	Harlequin: You chose the mask of the Doctor.
+	Harlequin: I wonder if it served you well. Knowledge is seldom the high card you seek among these Lords and Ladies.
+	Harlequin: But perhaps you were able to get through to some more reasonable ones.
+	Harlequin: Just remember, we are here to burn it all to the ground.
+	Harlequin: Don't get attached, as they're all complicit in the oppression of others like you.
+elif {Globals.gnaga} == true:
+	Harlequin: Did you feel particularly astute in the mask of the cat?
+	Harlequin: Or perhaps you got lost in the details.
+	Harlequin: Just remember, not everything is as it seems, and clues you would find proof in your world might not be in ours.
+else:
+	Harlequin: The mask of the Wolves themselves can be quite overpowering.
+	Harlequin: I certainly hope you did not make enemies of our three candidates.
 Harlequin: Perhaps you already think you know who [b]Roseus[/b] is.
 Harlequin: This is where this demonstration ends, however.
 You: Thank you kindly for playing the demo of [b]Nights of Cloaks and Lights[/b]!
