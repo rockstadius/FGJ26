@@ -42,12 +42,16 @@ elif {Globals.gnaga} == true:
 			You: She sighs.
 			Pierrot: Look at him... the Signora's new toy.
 			You: Pierrot takes a sip of the deep red wine in her glass.
-		- Compliment her dress
+		- GNAGA: Compliment her dress
 			Pierrot: Ooh, thank you. Don't tell anyone but... I made it myself.
+		- Greet her
+			You: Pierrot curtsies.
+			Pierrot: I do hope your night has been pleasant so far. Don't let my anguish bring you down.
+			You: Pierrot takes a sip of the deep red wine in her glass.
 	- Greet her
-		You: Pierrot curtsies.
-		Pierrot: I do hope your night has been pleasant so far. Don't let my anguish bring you down.
-		You: Pierrot takes a sip of the deep red wine in her glass.
+			You: Pierrot curtsies.
+			Pierrot: I do hope your night has been pleasant so far. Don't let my anguish bring you down.
+			You: Pierrot takes a sip of the deep red wine in her glass.
 else:
 	- SUN-AND-MOON: Why are you sad?
 		Pierrot: I am always sad. However...
@@ -73,7 +77,7 @@ You: The drunken elf sways in place.
 Pierrot: And while I can accept his choice, I... fear he's made it on a falsehood. I believe she has lied to him.
 Pierrot: Would you be willing to help me prove the truth I know in my heart?
 - What's in it for me?
-	Pierrot: Perhaps we can one another?
+	Pierrot: Perhaps we can help one another?
 	Pierrot: You wouldn't know it looking at me but...
 	You: She leans closer. You can smell the sweet wine on her breath.
 	Pierrot: We hunt in packs, if you catch my drift.

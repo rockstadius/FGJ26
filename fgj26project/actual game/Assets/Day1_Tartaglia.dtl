@@ -38,6 +38,13 @@ elif {Globals.colombina} == true:
 elif {Globals.gnaga} == true:
 	- GNAGA: Inspect his outfit
 		You: Your keen eyes note faded bloodstains on his lapel. Perhaps the Queen's health is not a given.
+		- Fake a cough
+			Tartaglio: I am not receiving new patients at this moment, I'm afraid.
+			You: The man covers his mouth and turns away.
+		- Another stranger behind a mask
+			Tartaglio: As should be, given the nature of these revelries.
+		- A friend, I hope
+			Tartaglio: A friend? What a queer and dangerous proposal.
 	- Fake a cough
 		Tartaglio: I am not receiving new patients at this moment, I'm afraid.
 		You: The man covers his mouth and turns away.
@@ -59,18 +66,20 @@ else:
 		Tartaglio: As should be, given the nature of these revelries.
 	- A friend, I hope
 		Tartaglio: A friend? What a queer and dangerous proposal.
-You: You get the distinct feeling Tartaglia has nothing more to say.
+You: You get the distinct feeling Tartaglia has nothing more to say right now.
 set {Globals.tartagliadiscussed} = true
 leave Tartaglio
 [wait time="0.5"]
 [end_timeline]
 label tartaglia_retalk
 You: Tartaglia is reading a leather-clad black journal, but he puts it away as you approach.
-Tartaglio: Greetings... again. How may I help you?
+Tartaglio: Greetings... again.
+label tartaglia_retalk_choices
+Tartaglio: How may I help you?
 - Ask about him
 	Tartaglio: What is there to know?
 	Tartaglio: Tartaglia is the name, and medicine is my trade. It is no secret that I work for our Lady most beloved.
-	jump tartaglia_retalk
+	jump tartaglia_retalk_choices
 - Ask about the Signora
 	You: Tartaglia blushes below his mask.
 	Tartaglio: The Signora? We are courting.
@@ -83,20 +92,20 @@ Tartaglio: Greetings... again. How may I help you?
 		Tartaglio: I have been told marriages, in general, are.
 		Tartaglio: No matter what one personally... hoped.
 		You: Resignation hangs Tartaglia's shoulders.
-	jump tartaglia_retalk
+	jump tartaglia_retalk_choices
 - Ask about Pantalone
 	Tartaglio: Pardon, as I know it's the preferred pastime of the court, but I do not partake in gossip of those who I do not know.
-	jump tartaglia_retalk
+	jump tartaglia_retalk_choices 
 - Ask about Pierrot
 	You: Tartaglia flinches. He lowers his voice before speaking.
 	Tartaglio: Please do not ask me about her again this close to the Signora.
-	jump tartaglia_retalk
+	jump tartaglia_retalk_choices
 - Bid him good night.
 	Tartaglio: And a good night to you as well.
 [end_timeline]
 
 label tartaglia_distraction
-You: Tartaglia is reading a leather-clad black journal, but he puts it away as you approach.
+You: Tartaglia is making notes into a leather-clad black journal, but he puts it away as you approach.
 Tartaglio: Greetings...yet again. How may I help you?
 - Ask him to talk to the Signora
 	Tartaglio: You wish me to go speak to my betrothed? She's currently speaking to her brother, Pantalone.

@@ -25,6 +25,8 @@ elif {Globals.colombina} == true:
 elif {Globals.gnaga} == true:
 	- GNAGA: Inspect his outfit
 		You: The man's clothes are out of style. His gold jewelry suggests it's not for a lack of wealth.
+		- Bow your head
+			You: Pantalone smiles, clearly appeased by your humility.
 	- Bow your head
 		You: Pantalone smiles, clearly appeased by your humility.
 else:
@@ -35,7 +37,7 @@ else:
 		You: As the compulsion of the mask lifts, Pantalone takes a step back.
 		Pantalone: You... you're one of them.
 		You: The man's hands twitch. Panic? Anger? You can't tell.
-		You: One thing is certain\: he will not speak to you again.
+		You: One thing is certain\: he will find it hard to trust you.
 		jump pantalone_end
 	- Bow your head
 		You: Pantalone smiles, clearly appeased by your humility.
@@ -63,7 +65,7 @@ Signora: Tread carefully, now, brother o'mine.
 You: Pantalone puckers his chapped lips and blows the Signora a kiss.
 Signora: I heard the most curious rumor.
 Pantalone: Here I hoped you'd gone deaf listening to your own voice... Do tell. If you must.
-Signora: What I heard is that several of your contracted Lost Souls have... wiggled their ways out this past moon.
+Signora: What I heard is that several of your contracted Lost Souls have... wiggled their ways out of their contracts this past moon.
 Signora: Are you growing soft, either of heart or of head?
 Pantalone: Regrettable, that.
 You: Pantalone looks at you.

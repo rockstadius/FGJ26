@@ -19,7 +19,7 @@ extends Node2D
 @onready var replay_button2 = %ReplayButton2
 
 #Placement variables Day 1
-var signoraplace1 = Vector2(1600,30)
+var signoraplace1 = Vector2(1580,50)
 var signoraplace2 = Vector2(900,400)
 var tartagliaplace1 = Vector2(1350,200)
 var tartagliaplace2 = Vector2(1350, 30)
